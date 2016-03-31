@@ -1,0 +1,241 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>GrowthX</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="format-detection" content="telephone=no">
+<!-- SET: FAVICON -->
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+<!-- END: FAVICON -->
+
+<!-- SET: STYLESHEET -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+<link rel="stylesheet" type="text/css" href="css/responsive.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+<link href='https://fonts.googleapis.com/css?family=Bitter:400,400italic,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+<!-- END: STYLESHEET -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+<![endif]-->
+<script src="js/jquery-1.12.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+$('.center_logo').clone().appendTo('.center_logo_main');
+
+
+
+equalheight = function(container){
+var currentTallest = 0,
+     currentRowStart = 0,
+     rowDivs = new Array(),
+     $el,
+     topPosition = 0;
+ $(container).each(function() {
+
+   $el = $(this);
+   $($el).height('auto')
+   topPostion = $el.position().top;
+
+   if (currentRowStart != topPostion) {
+     for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
+       rowDivs[currentDiv].height(currentTallest);
+     }
+     rowDivs.length = 0; // empty the array
+     currentRowStart = topPostion;
+     currentTallest = $el.height();
+     rowDivs.push($el);
+   } else {
+     rowDivs.push($el);
+     currentTallest = (currentTallest < $el.height()) ? ($el.height()) : (currentTallest);
+  }
+   for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
+     rowDivs[currentDiv].height(currentTallest);
+   }
+ });
+}
+
+$(window).load(function() {  equalheight('.main_content_middle ul li'); });
+$(window).resize(function(){  equalheight('.main_content_middle ul li'); });
+$(document).ready(function(){  equalheight('.main_content_middle ul li'); });
+	
+
+
+});
+</script>
+
+</head>
+<body>
+<!-- wrapper starts -->
+<div class="wrapper">
+            <!-- Header Starts -->
+            <header>
+            <div class="header_middle">
+            <div class="logo"><a href="#"><img src="images/logo_img.png" width="279" height="69" alt="logo_img"></a></div>
+            </div>
+            </header>
+            <!-- Header ends -->
+            <!-- Banner Starts -->
+            <div class="banner">
+            <span><img src="images/bg_img.png" width="1920" height="875" alt="bg_img"></span>
+            <div class="banner_content"><div class="container">
+            <div class="banner_middle">
+            <div class="banner_middle_1">
+            <img class="img_center" src="images/center_logo.png" width="563" height="139" alt="center_logo"> 
+            <p>Expand your business with practical tools used by the fastest growing<br>
+            companies in the world and coaching from successful entrepreneurs.</p>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            <!-- banner ends -->
+            <!-- apply Starts -->
+            <div class="apply_content">
+            <div class="container">
+            <div class="apply_content_middle">
+            <ul>
+                <li><i class="fa fa-check"></i><h6>Use models and frameworks adopted by the most successful companies in the world.</h6></li>
+                <li><i class="fa fa-check"></i><h6>Explore potential new business and revenue models by creating sources of innovation.</h6>
+                </li>
+                <li class="last"><i class="fa fa-check"></i><h6>Learn techniques that allow current and potential customers to guide your growth.                 </h6></li>
+            </ul>
+            <div class="clear"></div>
+            <a href="#">APPLY TODAY</a>
+            <h5>A very limited number of applicants will be accepted!</h5>
+            </div>
+            </div>
+  </div>
+            <!-- apply ends -->
+           <!-- reason Starts -->
+            <div class="reason_content">
+            <div class="container">
+             <div class="reason_content_middle">
+             <h2>3 Reasons You Should Apply to GrowthX</h2>
+       <ul>
+            <li><em>1</em><h3>Hands-on With<br> Successful<br> Entrepreneurs</h3><p> The accelerator is facilitated by  individuals who have started,
+            grown,and sold multiples innovative companies.They are seasoned by experience in developing customers and competitive advantage through
+            innovation.They aren't consultants—they are doers.</p></li>
+            <li><em>2</em><h3>Newest Concepts and Freshest  Thinking</h3><p>when the building innovation in the current economy,traditional
+            business approaches just don’t work. We share with you new methodologies, frameworks, and tools that are practical, and used
+            by some most successful companies around today</p></li>
+            <li class="last"><em>3</em><h3>It’s Not a Workshop</h3><p>You won’t be falling asleep here. Where you can lose interest in normal classroom-type setting
+           because it does not relate to you, our hybrid model allows you to learn while doing—working directly on your business to get it growing.</p></li>
+      </ul>
+            <div class="clear"></div>
+            </div>
+            </div>
+            </div>
+            <!-- reason ends -->
+            <!--  growth_content Starts -->
+            <div class="growth_content">
+            
+                <div class="container">
+                  <div class="growth_content_middle">
+                  <h3>Upcoming GrowthX Accelerator Dates</h3>
+                  
+                  
+                <table class="table_1">
+                  <thead>
+                      <tr  class="block1">
+                        <th class="loc"><small>Location</small></th>
+                        <th class="start"><em>Starts</em></th>
+                        <th class="avail"><label>Availability</label></th>
+                      </tr>
+                  </thead>
+                  <tbody>                    
+                    <tr class="block1">
+                    <td class="cape"><h4>Cape Girardeau, Mo</h4></td>
+                    <td class="app"><strong>April 1, 2016</strong></td>
+                    <td class="ann1"><a class="anapp" href="#">APPLY</a></td>
+                    </tr>
+                    <tr class="block1">
+                    <td class="spring"><h5>Springﬁeld, Mo</h5></td>
+                    <td class="tbd"><span>TBD</span></td>
+                    <td class="ann2"><a  class="annot" href="#">NOTIFY ME</a></td>
+                    </tr>
+                    <tr>
+                    <td class="cmb"><h6>Columbia, MO</h6></td>
+                    <td class="tbd"><span>TBD</span></td>
+                    <td class="ann2"><a class="annot"  href="#">NOTIFY ME</a></td>
+                    </tr>
+                    </tbody>
+                   </table>
+                  </div>
+                  </div>
+                 </div> 
+                 
+                 
+                 
+                 
+            <!-- growth_content -->
+            <!-- maincontent Starts -->
+            <div class="main_content">
+            <div class="container">
+            <div class="main_content_middle">
+            <h1>How do you know if GrowthX Accelerator is for you?</h1>
+            <h6>If you are looking for....</h6>
+            <ul>
+            <li><i class="fa fa-rocket"></i><h2>EXPANSION</h2><span>Do you want to take your  business to the next level, 
+but aren’t sure where to start? We help you search for and build sources of innovation to fuel growth</span></li>
+            <li><i class="fa fa-lightbulb-o"></i><h2>NEW IDEAS</h2><span>Whether you have an idea or need help generating new ones, our models and 
+frameworks provide a system <br>to build products your <br>customers will love.</span></li>
+            <li><i class="fa fa-television"></i><h2>TECHNOLOGY</h2><span>Do you have a new technology? Or could your company’s technology be repurposed? Maybe you are just looking for ways to leverage tech to help scale your business.</span></li>
+            <li class="last"><i class="fa fa-users"></i><h2>CUSTOMERS</h2><span>We help you build discipline and <br>structure in your company to constantly focus on getting,keeping, and growing customers.Either for your current products or new ones.</span></li>
+            </ul>
+            <div class="clear"></div>
+            </div>
+            </div>
+            </div>
+            <!-- maincontent ends -->
+            <!-- accelarator starts -->
+            <div class="accelarator">
+            <div class="container">
+            <div class="center_logo_main"></div>
+            <div class="accelarator_middle">
+            <h2>You will leave GrowthX Accelerator<br>with the following outcomes:</h2>
+            <div class="accelarator_middle_1">
+           <div class="accelarator_1">
+           <div class="accele1"><h3>Business Model Audit</h3><p>Step back from your business to create a living model you can use to analyze the impact of change on the key elements of the business. A model canvas provides a nimble tool to test, analyze, iterate, and re-test strategies. </p></div>
+           
+            <div class="accele2"><h3>Growth Value Propositions</h3><p>Deﬁne the unique persona of current and future customer segment, and create value propositions based on jobs you can do or value you can provide that will delight them.</p>
+            </div>
+            <div class="clear"></div>
+            </div>
+            <div class="center_logo">
+            <a href="#"><img src="images/center_logo.png" width="300" height="80" alt="center_logo"></a>
+            </div>
+            <div class="accelarator_2">
+           <div class="accele1 accele3"><h3>Innovation Infusion<br>Framework</h3><p>Innovations doesn't have to be an ambiguous words where you  aren't sure where to start. you will use practical tools that make it easy to search for and design source of innovation that extend beyond the quality of your products and services.</p></div>
+            <div class="accele2 accele4"><h3>Customer<br>Development Plan</h3><p>The final stage of GrowthX is a plan of action to systematically validate hypothesized innovation and expansion strategies to achieve product-market fit; where you know there is good market,and you know precisely how to satisfy there needs.</p></div><div class="clear"></div>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            <!-- accelarator ends -->
+            <!-- footer starts -->
+            <div class="footer">
+            <div class="container">
+            <div class="foot_middle">
+            <h3>Powered By</h3>
+            <ul>
+            <li><a href="#"><img src="images/bank1.png" width="246" height="100" alt="bank1"></a></li>
+            <li><a href="#"><img src="images/bank2.png" width="107" height="125" alt="bank2"></a></li>
+            <li><a href="#"><img src="images/bank3.png" width="240" height="105" alt="bank3"></a></li>
+            </ul>
+            <div class="clear"></div>
+            <a class="apply" href="#">APPLY TODAY</a>
+            <h4>A very limited number of applicants will be accepted!</h4>
+            <h6>The value of the GrowthX Accelerator is $4,999. Our Partners have joined together to make a very limited <br>number of grants available to highly-qualiﬁed applicants. Everyone is encouraged to apply.</h6>
+            <p>All interested parties must apply.Participants will be admitted based on the quality of there application.<br>Successful applicants are business owners or executives that exhibitsa track-record  and/or passion for<br>business growth,commitment,andpreparedness</p>
+            </div>
+            </div>
+            </div>
+            <!-- footer ends -->
+    </div>
+<!-- wrapper ends -->
+</body>
+</html>
