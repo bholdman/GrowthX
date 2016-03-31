@@ -22,9 +22,9 @@
 
 }
 @media (max-width:1023px){
-.banner_middle_1 p br{display:none;}	
+.banner_middle_1 p br{display:none;}
 .banner_middle_1 p{font-size:20px;padding:22px 13px;line-height: 30px;}
-.apply_content_middle ul li h6 br{display:none;}	
+.apply_content_middle ul li h6 br{display:none;}
 .apply_content_middle ul{width:100%;text-align: center;}
 .apply_content_middle ul li {width:225px;margin: 0 1% 0 0;}
 .apply_content_middle ul li h6{font-size: 19px;}
@@ -88,10 +88,10 @@
 
 }
 @media (max-width:767px){
-	
+
 .banner_middle_1 p    {font-size: 14px;padding: 14px 12px;line-height: 18px;}
 .banner_middle a      {margin: 0 auto;width: 250px;}
-.reason_content_middle h2{font-size: 24px;padding: 20px 0;text-align: center;}	
+.reason_content_middle h2{font-size: 24px;padding: 20px 0;text-align: center;}
 .reason_content_middle ul li p br{display:none;}
 .main_content_middle h1 {font-size: 19px;line-height: 18px;padding: 26px 0 24px 18px;}
 .main_content_middle h6 {font-size: 18px;line-height: 15px;}
@@ -101,10 +101,10 @@
 .foot_middle p br{display:none;}
 .foot_middle p{ padding: 9px 2%;}
 .accelarator_middle_1 {width:auto;}
-.accele1 h3 {font-size: 22px;}
-.accele2 h3 {font-size: 22px;}
-.accele3 h3 {font-size: 22px;}
-.accele4 h3 { font-size: 22px;}
+.accele1 h3 {font-size: 22px; padding: 15px 0 0px 0;}
+.accele2 h3 {font-size: 22px; padding: 15px 0 0px 0;}
+.accele3 h3 {font-size: 22px; padding: 15px 0 0px 0;}
+.accele4 h3 { font-size: 22px; padding: 15px 0 0px 0;}
 .accele1 { border-right: medium none !important;display: block;margin: 0 auto;padding: 0 9%;text-align: center; width:auto;float:none;}
 .accele2 { border-right: medium none !important;display: block;margin: 0 auto;padding: 0 9%;text-align: center; width:auto;float:none;}
 .accele3 { border-right: medium none !important;display: block;margin: 0 auto;padding: 0 9%;text-align: center; width:auto;float:none;padding:0 !important;}
@@ -236,39 +236,39 @@
  @media (max-width:767px){
 
 	/* Force table to not be like tables anymore */
-	table, thead, tbody, th, td, tr { 
-		display: block; 
+	table, thead, tbody, th, td, tr {
+		display: block;
 	}
-	
+
 	/* Hide table headers (but not display: none;, for accessibility) */
-	thead tr { 
+	thead tr {
 		position: absolute;
 		top: -9999px;
 		left: -9999px;
 	}
-	
+
 	tr {  }
-	
-	td { 
+
+	td {
 		/* Behave  like a "row" */
 		border: none;
-		
+
 		position: relative;
-		padding-left: 50%; 
+		padding-left: 50%;
 	}
-	
-	td:before { 
+
+	td:before {
 		/* Now like a table header */
 		position: absolute;
 		/* Top/left values mimic padding */
 		top: 6px;
 		left: 6px;
-		width: 45%; 
-		padding-right: 10px; 
+		width: 45%;
+		padding-right: 10px;
 		white-space: nowrap;
-		
+
 	}
-	
+
 
 	Label the data
 	td:nth-of-type{}
@@ -276,4 +276,3 @@
 		td:nth-of-type(2):before { content: "Starts";color:#999999;;font-size:14px;line-height:15px;font-family: 'Bitter', serif;;font-weight:400; }
 		td:nth-of-type(3):before { content: "Availability";color:#999999;;font-size:14px;line-height:15px;font-family: 'Bitter', serif;font-weight:400;}
 }
-
